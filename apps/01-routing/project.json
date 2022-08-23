@@ -21,7 +21,8 @@
         ],
         "styles": ["apps/01-routing/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "@nrwl/react/plugins/webpack",
+        "postcssConfig": "apps/01-routing/postcss.config.js"
       },
       "configurations": {
         "development": {
