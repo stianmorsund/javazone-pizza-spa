@@ -1,16 +1,8 @@
 import styles from './index.module.css';
+import Link from 'next/link';
 
 export function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
-  return (
-    <div>
-      <h1 className="font-sans">Hei</h1>
-    </div>
-  );
+  return <h1 className="text-4xl">Home</h1>;
 }
 
 export default Index;
