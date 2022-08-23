@@ -2,7 +2,6 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "01-routing": "apps/01-routing",
-    "01-routing-e2e": "apps/01-routing-e2e"
+    "01-routing": "apps/01-routing"
   }
 }
