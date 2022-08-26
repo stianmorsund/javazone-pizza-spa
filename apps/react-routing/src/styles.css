@@ -16,7 +16,8 @@ body {
  }
 
  [href]:focus:not(:active) {
-  outline: 0.125rem solid;
+  outline: 4px solid #80b3ff;
+  outline-offset: 5px;
  }
 
  a {
