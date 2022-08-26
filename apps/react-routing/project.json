@@ -1,0 +1,83 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/react-routing/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/react-routing",
+        "index": "apps/react-routing/src/index.html",
+        "baseHref": "/",
+        "main": "apps/react-routing/src/main.tsx",
+        "polyfills": "apps/react-routing/src/polyfills.ts",
+        "tsConfig": "apps/react-routing/tsconfig.app.json",
+        "assets": [
+          "apps/react-routing/src/favicon.ico",
+          "apps/react-routing/src/assets"
+        ],
+        "styles": ["apps/react-routing/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/react-routing/src/environments/environment.ts",
+              "with": "apps/react-routing/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "react-routing:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "react-routing:build:development"
+        },
+        "production": {
+          "buildTarget": "react-routing:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/react-routing/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/react-routing"],
+      "options": {
+        "jestConfig": "apps/react-routing/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
