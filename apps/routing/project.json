@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/react-routing/src",
+  "sourceRoot": "apps/routing/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,17 +9,14 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/react-routing",
-        "index": "apps/react-routing/src/index.html",
+        "outputPath": "dist/apps/routing",
+        "index": "apps/routing/src/index.html",
         "baseHref": "/",
-        "main": "apps/react-routing/src/main.tsx",
-        "polyfills": "apps/react-routing/src/polyfills.ts",
-        "tsConfig": "apps/react-routing/tsconfig.app.json",
-        "assets": [
-          "apps/react-routing/src/favicon.ico",
-          "apps/react-routing/src/assets"
-        ],
-        "styles": ["apps/react-routing/src/styles.css"],
+        "main": "apps/routing/src/main.tsx",
+        "polyfills": "apps/routing/src/polyfills.ts",
+        "tsConfig": "apps/routing/tsconfig.app.json",
+        "assets": ["apps/routing/src/favicon.ico", "apps/routing/src/assets"],
+        "styles": ["apps/routing/src/styles.css"],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -33,8 +30,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/react-routing/src/environments/environment.ts",
-              "with": "apps/react-routing/src/environments/environment.prod.ts"
+              "replace": "apps/routing/src/environments/environment.ts",
+              "with": "apps/routing/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -50,15 +47,15 @@
       "executor": "@nrwl/web:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "react-routing:build",
+        "buildTarget": "routing:build",
         "hmr": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "react-routing:build:development"
+          "buildTarget": "routing:build:development"
         },
         "production": {
-          "buildTarget": "react-routing:build:production",
+          "buildTarget": "routing:build:production",
           "hmr": false
         }
       }
@@ -67,14 +64,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/react-routing/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/routing/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/react-routing"],
+      "outputs": ["coverage/apps/routing"],
       "options": {
-        "jestConfig": "apps/react-routing/jest.config.ts",
+        "jestConfig": "apps/routing/jest.config.ts",
         "passWithNoTests": true
       }
     }

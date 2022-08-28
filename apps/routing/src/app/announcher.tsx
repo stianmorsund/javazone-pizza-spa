@@ -1,8 +1,11 @@
 import React from 'react'
 
-export class LiveAnnouncher extends React.Component<{ page: string | undefined }> {
+export class LiveAnnouncher extends React.Component<{
+  page: string | undefined
+}> {
   override componentDidUpdate() {
-    console.log('componentDidUpdate')
+    document.body.focus()
+    window.scrollTo(0, 0)
   }
 
   override render() {

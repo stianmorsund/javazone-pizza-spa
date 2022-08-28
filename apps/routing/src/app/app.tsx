@@ -25,6 +25,7 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route path="/side-2" element={<Side2 />} />
       </Routes>
+      <NavigationMenu routes={routes}></NavigationMenu>
     </>
   )
 }
