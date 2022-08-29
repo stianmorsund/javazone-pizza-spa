@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .screenreader-only {
   position: absolute;
   width: 1px;
@@ -9,14 +13,47 @@
   border: 0;
 }
 
+html,body,#root {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background: #fcefe6;
 }
 
-[href]:focus:not(:active) {
-  outline: 4px solid #80b3ff;
-  outline-offset: 5px;
+
+main {
+width: 100%;
+  box-sizing: border-box;
+  padding: 2em;
+  margin-left: 15%;
+  margin-bottom: 4em;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+nav {
+
+  width: 15%;
+  margin-right: 5em;
+  position: fixed;
+  left: 0;
+}
+
+section {
+  max-width: 740px;
+  line-height: 2em;
+}
+
+select:focus, input:focus, [href]:focus:not(:active) {
+  outline: 4px solid #fec25c;
+  outline-offset: 1px;
 }
 
 a {
@@ -29,4 +66,108 @@ a {
 
 h1 {
   font-size: 3em;
+}
+
+fieldset {
+  /* background: #fff; */
+  border: 1px solid #ccc;
+
+  padding: 2em;
+  border-radius: 0px;
+}
+
+legend {
+  padding-top: 2em;
+  font-size: 1.5em;
+}
+
+
+h1, h2, legend {
+  font-family: 'Londrina Solid', sans-serif;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+input, select {
+  border: 2px solid rgba(0,0,0,.6);
+  background: #fff;
+  padding: 1em;
+  border-radius: 0px;
+  font-size: 1em;
+  appearance: none;
+}
+
+input:hover, select:hover {
+  border: 2px solid rgba(0,0,0,.8);
+}
+
+select {
+  background-image: url("/assets/dropdown_arrow.svg");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+  cursor: pointer;
+  width: 70%;
+}
+
+label {
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+button {
+  background: #333;
+  padding: 1em;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 1em;
+  width: 100%;
+  margin-top: .5em;
+}
+
+
+.pizza-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.pizza-wrap > img {
+  width: 250px;
+  height: auto;
+  margin-right: 2em;
+}
+
+.pizza-wrap > div {
+  width: 70%;
+}
+
+.post-wrap {
+  display: flex;
+}
+
+.post-wrap > div:first-child {
+width: 7em;
+margin-right: .5em;
+}
+
+
+.pending-order {
+  /* position: absolute;
+  right: 0;
+  top: 0; */
+  background: #fff;
+  margin: 2em 0;
+  padding: 2em;
+  border: 2px solid #333;
 }
