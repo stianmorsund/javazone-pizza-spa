@@ -50,6 +50,11 @@ export function Order() {
                     <option>Fanta</option>
                   </select>
                 </div>
+
+                <div className="form-field">
+                  <label htmlFor="special-wishes">Spesielle ønsker</label>
+                  <textarea id="special-wishes" cols={30} rows={10}></textarea>
+                </div>
               </div>
 
               <img
@@ -90,7 +95,7 @@ export function Order() {
             Send inn ordre
           </button>
           {isOrderSent && (
-            <div className="pending-order" ref={orderConfirmed} aria-live="polite" >
+            <div className="pending-order" ref={orderConfirmed}>
               <h2>Din ordre er på vei!</h2>
               <p>Vi ringer når vi står utenfor.</p>
             </div>
