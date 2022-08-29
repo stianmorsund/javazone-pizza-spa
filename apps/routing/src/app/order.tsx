@@ -90,7 +90,7 @@ export function Order() {
             Send inn ordre
           </button>
           {isOrderSent && (
-            <div className="pending-order" ref={orderConfirmed} aria-live="assertive" >
+            <div className="pending-order" ref={orderConfirmed} aria-live="polite" >
               <h2>Din ordre er på vei!</h2>
               <p>Vi ringer når vi står utenfor.</p>
             </div>
