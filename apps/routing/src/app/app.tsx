@@ -29,10 +29,10 @@ export function App() {
           currentPage={currentPage}
         ></NavigationMenu>
       </nav>
-      <LiveAnnouncher
+      {/* <LiveAnnouncher
         message={navigationMessage}
         ariaLive="polite"
-      ></LiveAnnouncher>
+      ></LiveAnnouncher> */}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

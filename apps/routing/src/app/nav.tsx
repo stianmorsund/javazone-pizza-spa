@@ -13,15 +13,18 @@ export class NavigationMenu extends React.Component<{
   }
   override render() {
     return (
-      <ul>
-        {this.props.routes.map((route, index) => {
-          return (
-            <li key={index}>
-              <Link to={route.path}>{route.niceName}</Link>
-            </li>
-          )
-        })}
-      </ul>
+      <div>
+        <img src="assets/logo.svg" alt="Logo" className="logo" />
+        <ul>
+          {this.props.routes.map((route, index) => {
+            return (
+              <li key={index}>
+                <Link to={route.path}>{route.niceName}</Link>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     )
   }
 }
