@@ -52,6 +52,7 @@ width: 100%;
 nav ul {
 list-style-type: none;
 display: flex;
+padding-top: 1em;
 }
 
 nav ul li {
@@ -104,7 +105,7 @@ button {
 
 select:focus, input:focus, [href]:focus:not(:active), textarea:focus {
   outline: 4px solid #333;
-  outline-offset: 1px;
+  outline-offset: 3px;
 }
 
 a {
