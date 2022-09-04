@@ -1,8 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css'
 
-import { LiveAnnouncher } from './announcher'
-
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { getCurrentPageNicename, IRoute } from './utils/route'
 import { Home } from './home'
@@ -20,7 +18,7 @@ export function App() {
     location: location.pathname,
     routes,
   })
-  const navigationMessage = `Navigerte til ${currentPage}`
+
   return (
     <>
       <nav>
@@ -29,10 +27,6 @@ export function App() {
           currentPage={currentPage}
         ></NavigationMenu>
       </nav>
-      <LiveAnnouncher
-        message={navigationMessage}
-        ariaLive="polite"
-      ></LiveAnnouncher>
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
