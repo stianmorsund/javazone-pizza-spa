@@ -31,7 +31,7 @@ export function App() {
       </nav>
       <LiveAnnouncher
         message={navigationMessage}
-        ariaLive="polite"
+        ariaLive="assertive"
       ></LiveAnnouncher>
       <main>
         <Routes>
