@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { IRoute } from './utils/route'
 
@@ -9,11 +8,6 @@ export function NavigationMenu({
   routes: IRoute[]
   currentPage: string | undefined
 }) {
-  useEffect(() => {
-    document.title = `${currentPage} - Pizza Ipsum`
-    document.body.focus()
-    window.scrollTo(0, 0)
-  })
 
   return (
     <div>
