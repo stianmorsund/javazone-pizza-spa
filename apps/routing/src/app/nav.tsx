@@ -7,9 +7,9 @@ export class NavigationMenu extends React.Component<{
   currentPage: string | undefined
 }> {
   override componentDidUpdate() {
-    document.title = `${this.props.currentPage} - Pizza`
-    document.body.focus()
-    window.scrollTo(0, 0)
+    // document.title = `${this.props.currentPage} - Pizza`
+    // document.body.focus()
+    // window.scrollTo(0, 0)
   }
   override render() {
     return (

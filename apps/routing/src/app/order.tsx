@@ -17,7 +17,7 @@ export function Order() {
     <article>
       <header>
         <h1>Bestill pizza</h1>
-        <p>Vennligst legg inn din bestilling under.</p>
+        <p>Pizza ipsum dolor amet ranch garlic sauce chicken wing fresh tomatoes, bbq pesto platter chicken stuffed bacon lasagna.</p>
       </header>
 
       <section>

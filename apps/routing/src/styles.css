@@ -35,6 +35,7 @@ body {
 
 
 main {
+  max-width: 740px;
 width: 100%;
   box-sizing: border-box;
 
@@ -86,6 +87,14 @@ section {
   line-height: 2em;
 }
 
+p {
+  line-height: 2em;
+}
+
+button {
+  margin-bottom: 1em;
+}
+
 select:focus, input:focus, [href]:focus:not(:active), textarea:focus {
   outline: 4px solid #333;
   outline-offset: 1px;
@@ -104,15 +113,17 @@ h1 {
 }
 
 fieldset {
-  /* background: #fff; */
+  width: 100%;
+  background: rgba(255, 247, 189, 0.45);
   border: 2px solid #daa677;
 
   padding: 2em;
-  border-radius: 0px;
+  border-radius: 10px;
+  margin-top:2em;
 }
 
 legend {
-  padding-top: 2em;
+  /* padding-top: 2em; */
   font-size: 1.5em;
 }
 
@@ -129,9 +140,10 @@ input, select, textarea {
   border: 2px solid rgba(0,0,0,.6);
   background: #fff;
   padding: 1em;
-  border-radius: 0px;
+  border-radius: 10px;
   font-size: 1em;
   appearance: none;
+  font-family: 'Work Sans', sans-serif;
 
 }
 
@@ -153,6 +165,10 @@ label {
   padding-bottom: 5px;
 }
 
+form {
+  width: 100%;
+}
+
 .form-field {
   width: 100%;
   display: flex;
@@ -164,7 +180,7 @@ button {
   cursor: pointer;
   background: #333;
   padding: 1em;
-  border-radius: 0px;
+  border-radius: 10px;
   color: #fff;
   font-size: 1em;
   width: 100%;
@@ -208,4 +224,6 @@ margin-right: .5em;
   margin: 2em 0;
   padding: 2em;
   border: 2px solid #333;
+  border-radius: 10px;
+  margin-bottom: 2em;
 }
