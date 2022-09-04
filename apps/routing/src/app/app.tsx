@@ -20,6 +20,7 @@ export function App() {
     location: location.pathname,
     routes,
   })
+  const navigationMessage = `Navigerte til ${currentPage}`
   return (
     <>
       <nav>
@@ -28,6 +29,10 @@ export function App() {
           currentPage={currentPage}
         ></NavigationMenu>
       </nav>
+      <LiveAnnouncher
+        message={navigationMessage}
+        ariaLive="polite"
+      ></LiveAnnouncher>
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
