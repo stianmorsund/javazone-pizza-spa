@@ -13,7 +13,7 @@ export function NavigationMenu({
     document.title = `${currentPage} - Pizza Ipsum`
     document.body.focus()
     window.scrollTo(0, 0)
-  })
+  }, [currentPage])
 
   return (
     <div>
