@@ -19,8 +19,7 @@ nav a.active { border-bottom: 2px #333 solid; }
 
 
 /* Typography */
-h1 { font-size: 3em; letter-spacing: 1px; }
-h1, h2, legend { font-family: 'Londrina Solid', sans-serif; }
+h1 { font-size: 3em; }
 a { font-size: 2em; color: #333; text-decoration: none; font-weight: 600; border-bottom: 2px solid; }
 section { max-width: 740px; line-height: 2em; }
 p { line-height: 2em; }
@@ -30,7 +29,7 @@ p { line-height: 2em; }
 form { width: 100%; }
 .form-field { width: 100%; display: flex; flex-direction: column; padding-bottom: 1em; }
 fieldset { width: 100%; background: rgba(255, 247, 189, 0.45); border: 2px solid #daa677; padding: 2em; border-radius: 10px; margin-top: 2em; }
-legend { font-size: 1.5em; }
+legend { font-size: 1.2em; font-weight: 500; }
 input, select, textarea { border: 2px solid rgba(0, 0, 0, 0.6); background: #fff; padding: 1em; border-radius: 10px; font-size: 1em; appearance: none; font-family: 'Work Sans', sans-serif; }
 select:focus, input:focus, [href]:focus:not(:active), textarea:focus { outline: 4px solid #333; outline-offset: 3px; }
 input:hover, select:hover { border: 2px solid rgba(0, 0, 0, 0.8); }
