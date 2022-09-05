@@ -20,9 +20,13 @@ export function App() {
     routes,
   })
   const navigationMessage = `Navigerte til ${currentPage}`
+  const skipToContent = (e: Partial<{ preventDefault: () => void }>) => {
+    e?.preventDefault?.()
+    document.getElementById('main')?.focus()
+  }
   return (
     <>
-      <a className="skiplink" href="#main">
+      <a className="skiplink" href="#main" onClick={skipToContent}>
         Hopp til hovedinnhold
       </a>
       <nav>
@@ -35,7 +39,7 @@ export function App() {
         message={navigationMessage}
         ariaLive="assertive"
       ></LiveAnnouncher>
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/order" element={<Order />} />
