@@ -23,6 +23,9 @@ export function App() {
   const navigationMessage = `Navigerte til ${currentPage}`
   return (
     <>
+      <a className="skiplink" href="#main">
+        Hopp til hovedinnhold
+      </a>
       <nav>
         <NavigationMenu
           routes={routes}
@@ -33,7 +36,7 @@ export function App() {
         message={navigationMessage}
         ariaLive="assertive"
       ></LiveAnnouncher>
-      <main>
+      <main id="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/order" element={<Order />} />
