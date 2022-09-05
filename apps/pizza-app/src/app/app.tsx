@@ -2,7 +2,6 @@
 import styles from './app.module.css'
 
 import { LiveAnnouncher } from './announcher'
-
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { getCurrentPageNicename, IRoute } from './utils/route'
 import { Home } from './home'
