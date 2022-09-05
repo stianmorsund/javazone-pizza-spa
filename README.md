@@ -19,3 +19,7 @@ $ npm run start pizza-app
 - Announche when order is complete
 - Set `<title>` on every page
 
+
+## Credits
+- [Vector pizzas](https://www.freepik.com/free-vector/set-cartoon-pizzas-with-different-stuffing-flat-illustration_14625624.htm)
+- [Pizza logo](https://www.freepik.com/free-vector/pizzeria-monochrome-elements-set_9463324.htm)
