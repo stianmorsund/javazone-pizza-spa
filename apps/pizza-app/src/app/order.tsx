@@ -17,7 +17,10 @@ export function Order() {
     <article>
       <header>
         <h1>Bestill pizza</h1>
-        <p>Pizza ipsum dolor amet ranch garlic sauce chicken wing fresh tomatoes, bbq pesto platter chicken stuffed bacon lasagna.</p>
+        <p>
+          Pizza ipsum dolor amet ranch garlic sauce chicken wing fresh tomatoes,
+          bbq pesto platter chicken stuffed bacon lasagna.
+        </p>
       </header>
 
       <section>
@@ -95,7 +98,12 @@ export function Order() {
             Send inn ordre
           </button>
           {isOrderSent && (
-            <div className="pending-order" ref={orderConfirmed} aria-live="polite" role="status">
+            <div
+              className="pending-order"
+              ref={orderConfirmed}
+              aria-live="polite"
+              role="status"
+            >
               <h2>Din ordre er på vei!</h2>
               <p>Vi ringer når vi står utenfor.</p>
             </div>

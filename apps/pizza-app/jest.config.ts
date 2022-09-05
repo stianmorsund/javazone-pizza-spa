@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'routing',
+  displayName: 'pizza-app',
   preset: '../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
     '^.+\\.[tj]sx?$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/routing',
+  coverageDirectory: '../../coverage/apps/pizza-app',
 }
