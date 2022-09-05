@@ -27,7 +27,7 @@ export function Order() {
         <form>
           <fieldset>
             <legend>Din bestilling</legend>
-            <div className="pizza-wrap">
+            <div className="order">
               <div>
                 <div className="form-field">
                   <label htmlFor="pizza">Pizza</label>
