@@ -1,4 +1,4 @@
-# Pizza SPA
+# Pizza SPA 🍕
 
 React App demonstrating some techniques for making accessible single page apps.
 Used for the norwegian talk "5 vanlige tilgjengelighetsfeil i single-page-applikasjoner og hvordan fikse dem" on Javazone
