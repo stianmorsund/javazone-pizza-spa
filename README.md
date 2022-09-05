@@ -16,6 +16,7 @@ $ npm run start pizza-app
 - Added live-announcher component
 - Reset focus to `<body>` after navigation
 - Reset scroll-position
+- Added skiplink
 - Announche when order is complete
 - Set `<title>` on every page
 
